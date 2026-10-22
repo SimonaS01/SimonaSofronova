@@ -4,72 +4,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101718">
-  <meta name="description" content="Simona Sofronova — software engineering analyst in Louisville, Kentucky. Enterprise web development, SQL reporting, secure integrations, and creative problem solving.">
-  <title>Simona Sofronova | Software & Web Development</title>
+  <meta name="description" content="Simona Sofronova: software engineering analyst in Louisville, KY. Web development, secure integrations, reporting, and remote opportunities.">
+  <title>Software & Web Development | Simona Sofronova</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <noscript><style>@media(max-width:760px){#navigation{display:flex;flex-direction:column}.menu-toggle{display:none}}</style></noscript>
+  <style>
+    .page-top{padding-block:64px 30px}.page-top p{max-width:650px;color:var(--muted)}
+    .hero-photo{width:100%;height:390px;object-fit:cover;object-position:55% 30%;display:block;border:1px solid var(--line)}
+    .photo-caption{font-size:11px;color:var(--muted);margin:12px 0 0}
+    .page-links{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .page-links a{border-top:1px solid var(--line);padding-top:22px}.page-links p{font-size:14px;color:var(--muted)}
+    .photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.photo-grid figure{margin:0}
+    .photo-grid img{width:100%;height:330px;object-fit:cover;display:block}.photo-grid figcaption{padding-top:12px;font-size:14px;color:var(--muted)}
+    .footer{flex-wrap:wrap}.footer-links{display:flex;gap:20px;font-size:12px}
+    @media(max-width:760px){.header{gap:20px}#navigation{display:flex;flex-direction:row;flex-wrap:wrap;gap:16px;padding:0;flex-basis:auto}#navigation a{padding:0;border:0;font-size:12px}.hero-photo{height:340px}.page-links{grid-template-columns:1fr}.photo-grid{gap:20px}.photo-grid img{height:240px}.page-top{padding-top:40px}.photo-grid figcaption{font-size:12px}}
+    @media(max-width:420px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:340px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="header">
-    <a class="brand" href="#home" aria-label="Simona Sofronova home">ss<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+    <a class="brand" href="index.html" aria-label="Simona Sofronova home">ss<span>.</span></a>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#beyond">Beyond work</a><a href="#contact" class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="experience.html">Experience</a>
     </nav>
   </header>
   <main id="main">
-    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+    <section class="hero wrap" aria-labelledby="home-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Louisville, KY · Open to remote opportunities</p>
-        <h1 id="hero-title">Hi, I’m Simona.<br>I make complex<br>things <em>work better.</em></h1>
-        <p class="hero-description">Software engineering analyst. Creative problem solver. Building useful web experiences, connecting systems, and making everyday workflows a little easier.</p>
-        <div class="actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="button secondary" href="assets/Simona-Sofronova-Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a></div>
+        <h1 id="home-title">Hi, I’m Simona.<br>I make complex<br>things <em>work better.</em></h1>
+        <p class="hero-description">Software engineering analyst. Creative problem solver. I build web experiences, connect systems, and improve the workflows people rely on.</p>
+        <div class="actions"><a class="button primary" href="work.html">Explore my work ↗</a><a class="button secondary" href="assets/Simona-Sofronova-Resume.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
       </div>
-      <aside class="identity" aria-label="A snapshot of my professional focus">
-        <div class="identity-top"><span class="mono">PROFILE / 01</span><span class="small-spark" aria-hidden="true">✳</span></div>
-        <div class="monogram" aria-hidden="true">S<span>S</span><i></i></div>
-        <p class="identity-name">Simona Sofronova</p><p class="identity-role">Software Engineering Analyst<br>& Senior Web Specialist</p>
-        <div class="identity-details"><span>Build thoughtfully.</span><span>Solve practically.</span><span>Keep improving.</span></div>
-        <div class="identity-bottom mono"><span>C# / .NET / SQL</span><span aria-hidden="true">↗</span></div>
-      </aside>
-      <div class="hero-foot mono"><span>ENGINEERING WITH A CREATIVE SIDE</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
+      <div><img class="hero-photo" src="assets/IMG_8262.jpeg" alt="Portrait of Simona Sofronova" fetchpriority="high"><p class="photo-caption">Developer mindset. Creative perspective. Always learning.</p></div>
+      <div class="hero-foot mono"><span>ENGINEERING WITH A CREATIVE SIDE</span><a href="about.html">GET TO KNOW ME ↗</a></div>
     </section>
-    <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>ASP.NET Core</span><b aria-hidden="true">/</b><span>C#</span><b aria-hidden="true">/</b><span>SQL Server</span><b aria-hidden="true">/</b><span>Microsoft Graph</span><b aria-hidden="true">/</b><span>JavaScript</span></div></div>
-    <section class="section wrap about" id="about" aria-labelledby="about-title">
-      <div><p class="eyebrow">01 / THE INTRODUCTION</p><h2 id="about-title">Curious by nature.<br><span>Practical by approach.</span></h2></div>
-      <div class="about-copy"><p class="lead">I like understanding how things work—and finding ways to make them better.</p><p>I’m a Louisville-based developer with experience maintaining and modernizing enterprise web applications at UPS. My work connects user experience, backend logic, databases, and secure integrations.</p><p>I enjoy the variety: tracking down a stubborn issue, simplifying a reporting workflow, or rethinking a page so it feels clearer and more intuitive. Design and technical problem solving are both parts of the work I love.</p><p>I earned my B.S.B.A. in Computer Information Systems, Cyber Security Track, from the University of Louisville, graduating summa cum laude in 2025.</p><div class="about-notes"><span>English + Bulgarian</span><span>Technical + creative</span><span>Always learning</span></div></div>
+    <div class="stack-strip"><div class="wrap"><span>ASP.NET Core</span><b>/</b><span>C#</span><b>/</b><span>SQL Server</span><b>/</b><span>Microsoft Graph</span><b>/</b><span>GitHub & AI tools</span></div></div>
+    <section class="section wrap" aria-labelledby="explore-title">
+      <p class="eyebrow">A QUICK INTRODUCTION</p><h2 id="explore-title">Technical depth.<br><span>A personal perspective.</span></h2>
+      <div class="page-links">
+        <a href="work.html"><h3>What I build ↗</h3><p>Enterprise web improvements, authentication modernization, SQL reporting, and automated workflows.</p></a>
+        <a href="experience.html"><h3>What I bring ↗</h3><p>Hands-on development, operational experience, a cybersecurity-focused education, and practical troubleshooting.</p></a>
+        <a href="about.html"><h3>Who I am ↗</h3><p>A Bulgarian and English speaker who loves creative design, vegan cooking, cardio, and a good story.</p></a>
+      </div>
     </section>
-    <section class="section work-section" id="work" aria-labelledby="work-title"><div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="work-title">Progress, built into<br><span>everyday systems.</span></h2></div><p>A few areas where I’ve helped turn business needs into working solutions.</p></div>
-      <div class="projects">
-        <article class="project featured"><div class="project-top"><span class="mono">01 / APPLICATION MODERNIZATION</span><span class="project-symbol" aria-hidden="true">↗</span></div><h3>An evolving enterprise<br>web experience.</h3><p>Continuously maintain and improve an internal Air Dangerous Goods website supporting reporting, training administration, compliance tracking, and operational workflows.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Translate changing operational requirements into practical application updates.</p><p><strong>My contribution:</strong> Develop Razor Pages and backend logic, update SQL reporting, troubleshoot issues across the stack, and refine layouts for clearer navigation and usability.</p><p><strong>What I enjoy:</strong> Combining technical maintenance with creative redesign to make an established system easier to use.</p></div></details><div class="tags"><span>ASP.NET Core</span><span>C#</span><span>SQL Server</span><span>UI design</span></div></article>
-        <article class="project"><div class="project-top"><span class="mono">02 / IDENTITY & INTEGRATION</span><span class="project-symbol" aria-hidden="true">⌁</span></div><h3>Modernizing the<br>way systems connect.</h3><p>Help transition legacy WS4ID-based user workflows to Microsoft Entra ID and Microsoft Graph API, updating authentication and employee lookup integrations.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Update legacy identity dependencies and user information workflows.</p><p><strong>My contribution:</strong> Integrate Graph API calls, map user attributes, and troubleshoot authentication and lookup behavior across application pages.</p><p><strong>Related security work:</strong> Secure configuration and certificate handling using HashiCorp Vault, encrypted secrets, and certificate-based authentication.</p></div></details><div class="tags"><span>Microsoft Graph</span><span>Entra ID</span><span>OpenID Connect</span><span>Vault</span></div></article>
-        <article class="project"><div class="project-top"><span class="mono">03 / DATA & AUTOMATION</span><span class="project-symbol" aria-hidden="true">⇄</span></div><h3>Less repetition.<br>More reliable workflows.</h3><p>Build SQL-driven reports and scheduled data exports, connecting database records with recurring CSV generation and SFTP delivery.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Support recurring business reporting and data delivery.</p><p><strong>My contribution:</strong> Develop and maintain stored procedures, reporting logic, and automated export processes, including scheduled execution and file retention.</p><p><strong>The approach:</strong> Validate data, investigate failures, and maintain workflows as requirements change.</p></div></details><div class="tags"><span>SQL</span><span>.NET</span><span>CSV exports</span><span>SFTP</span></div></article>
-      </div><p class="work-note">These summaries describe internal professional work. Source code and internal system details are proprietary.</p>
+    <section class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-layout">
+      <div><p class="eyebrow">WHAT’S NEXT</p><h2 id="contact-title">Let’s make<br><em>something work.</em></h2><p>I’m exploring remote opportunities in software and web development, application support, and technical troubleshooting—including incident-focused roles where my experience can contribute.</p><a class="email-link" href="mailto:simonasof01@gmail.com">simonasof01@gmail.com ↗</a></div>
+      <div class="contact-links"><p class="mono">LET’S CONNECT</p><a href="https://www.linkedin.com/in/simona-sofronova" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/Simona-Sofronova-Resume.pdf" download>Download résumé ↓</a><p class="location">Louisville, Kentucky<br>English & Bulgarian</p></div>
     </div></section>
-    <section class="section wrap skills" id="skills" aria-labelledby="skills-title"><div><p class="eyebrow">03 / THE TOOLKIT</p><h2 id="skills-title">Across the stack.<br><span>Close to the problem.</span></h2><p class="section-intro">From the interface to the database, I like connecting the pieces.</p></div><div class="skill-groups">
-      <div class="skill-row"><span class="mono">01</span><div><h3>Web development</h3><p>C# · ASP.NET Core · Razor Pages · JavaScript · HTML · CSS · Java</p></div></div>
-      <div class="skill-row"><span class="mono">02</span><div><h3>Data & reporting</h3><p>SQL Server · Stored procedures · Database views · Dapper · Data validation · Excel</p></div></div>
-      <div class="skill-row"><span class="mono">03</span><div><h3>Identity & security</h3><p>Microsoft Entra ID · Microsoft Graph API · OpenID Connect · HashiCorp Vault · Certificate-based authentication</p></div></div>
-      <div class="skill-row"><span class="mono">04</span><div><h3>Operations & creative tools</h3><p>IIS · SFTP automation · Scheduled jobs · VS Code · Drupal · Plone · Photoshop · Illustrator</p></div></div>
-    </div></section>
-    <section class="section experience-section" id="experience" aria-labelledby="experience-title"><div class="wrap experience-layout"><div class="experience-intro"><p class="eyebrow">04 / THE JOURNEY</p><h2 id="experience-title">A foundation in<br><span>real-world work.</span></h2><p>Technical experience shaped by operational knowledge, collaboration, and continuous learning.</p><a class="text-link" href="assets/Simona-Sofronova-Resume.pdf" download>Download full résumé <span aria-hidden="true">↓</span></a></div><div class="timeline">
-      <article class="timeline-item"><p class="mono timeline-date">JUN 2025 — PRESENT</p><h3>Software Engineering Analyst /<br>Senior Web Specialist</h3><p class="employer">UPS · Louisville, KY</p><p>Develop and modernize enterprise web applications, build reporting and automation, and troubleshoot issues across interfaces, databases, authentication, and deployments.</p></article>
-      <article class="timeline-item"><p class="mono timeline-date">JUN 2024 — MAY 2025</p><h3>Web Developer Intern</h3><p class="employer">UofL School of Medicine · Louisville, KY</p><p>Supported website migration, content maintenance, and modernization using Drupal and Plone, with attention to accessibility and consistent user experiences.</p></article>
-      <article class="timeline-item"><p class="mono timeline-date">JUL 2020 — JUN 2025</p><h3>Certified Hazmat Responder</h3><p class="employer">UPS · Louisville, KY</p><p>Supported regulated operations, researched records in business systems, and analyzed operational data for reporting and issue resolution.</p></article>
-      <article class="timeline-item"><p class="mono timeline-date">FALL 2022</p><h3>Web Developer</h3><p class="employer">Helping Hands Foundation · Remote</p><p>Designed and developed a responsive HTML and CSS website, tailoring its layout and content to client needs.</p></article>
-      <article class="education"><p class="eyebrow">EDUCATION / MAY 2025</p><h3>University of Louisville</h3><p>B.S.B.A. · Computer Information Systems<br>Cyber Security Track</p><div class="education-bottom"><strong>3.984 <small>GPA</small></strong><span>Summa Cum Laude</span></div></article>
-    </div></div></section>
-    <section class="section wrap beyond" id="beyond" aria-labelledby="beyond-title"><div class="section-heading"><div><p class="eyebrow">05 / THE HUMAN SIDE</p><h2 id="beyond-title">Beyond the keyboard<span>.</span></h2></div><p>A few things that make me, me.</p></div><div class="interests">
-      <article><span class="interest-number mono">01 / IN THE KITCHEN</span><h3>Plant-based & curious.</h3><p>I’m vegan and love cooking. The kitchen is another place I get to be creative.</p></article>
-      <article><span class="interest-number mono">02 / ROOTS & CONNECTIONS</span><h3>Two languages.<br>One me.</h3><p>I’m Bulgarian and bilingual in Bulgarian and English.</p></article>
-      <article><span class="interest-number mono">03 / OFF THE CLOCK</span><h3>Cardio, company<br>& good stories.</h3><p>I love working out, especially cardio, and I have one dog. I’m also an anime and manga fan.</p></article>
-    </div><div class="fun-fact"><span class="mono">A CONVERSATION STARTER</span><p>My favorite show? <em>The Vampire Diaries.</em></p><span aria-hidden="true">✳</span></div></section>
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-layout"><div><p class="eyebrow">06 / WHAT’S NEXT</p><h2 id="contact-title">Let’s make<br><em>something work.</em></h2><p>I’m interested in remote opportunities in software and web development, application support, and technical troubleshooting—including incident-focused roles where my experience can contribute.</p><a class="email-link" href="mailto:simonasof01@gmail.com">simonasof01@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><p class="mono">FIND ME HERE</p><a href="https://www.linkedin.com/in/simona-sofronova" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="assets/Simona-Sofronova-Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a><p class="location">Based in Louisville, Kentucky<br>English & Bulgarian</p></div></div></section>
   </main>
-  <footer class="wrap footer"><a class="brand" href="#home">ss<span>.</span></a><p>© <span id="year">2026</span> Simona Sofronova</p><a href="#home">Back to top ↑</a></footer>
+  <footer class="wrap footer">
+    <a class="brand" href="index.html" aria-label="Home">ss<span>.</span></a>
+    <p>© 2026 Simona Sofronova · Louisville, KY</p>
+    <div class="footer-links"><a href="mailto:simonasof01@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/simona-sofronova" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+  </footer>
 </body>
 </html>
