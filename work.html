@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101718">
+  <meta name="description" content="Selected professional work by Simona Sofronova: enterprise application improvements, Microsoft Graph integrations, SQL reporting, and automation.">
+  <title>Selected Work | Simona Sofronova</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-top{padding-block:64px 30px}.page-top p{max-width:650px;color:var(--muted)}
+    .hero-photo{width:100%;height:390px;object-fit:cover;object-position:55% 30%;display:block;border:1px solid var(--line)}
+    .photo-caption{font-size:11px;color:var(--muted);margin:12px 0 0}
+    .page-links{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .page-links a{border-top:1px solid var(--line);padding-top:22px}.page-links p{font-size:14px;color:var(--muted)}
+    .photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.photo-grid figure{margin:0}
+    .photo-grid img{width:100%;height:330px;object-fit:cover;display:block}.photo-grid figcaption{padding-top:12px;font-size:14px;color:var(--muted)}
+    .footer{flex-wrap:wrap}.footer-links{display:flex;gap:20px;font-size:12px}
+    @media(max-width:760px){.header{gap:20px}#navigation{display:flex;flex-direction:row;flex-wrap:wrap;gap:16px;padding:0;flex-basis:auto}#navigation a{padding:0;border:0;font-size:12px}.hero-photo{height:340px}.page-links{grid-template-columns:1fr}.photo-grid{gap:20px}.photo-grid img{height:240px}.page-top{padding-top:40px}.photo-grid figcaption{font-size:12px}}
+    @media(max-width:420px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:340px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Simona Sofronova home">ss<span>.</span></a>
+    <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" aria-current="page">Work</a>
+        <a href="experience.html">Experience</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="wrap page-top"><p class="eyebrow">THE WORK</p><h1>Useful systems.<br><em>Thoughtful improvements.</em></h1><p>I enjoy improving applications over time: understanding the business need, finding the right technical approach, and refining the experience.</p></section><section class="section work-section" id="work" aria-labelledby="work-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">Progress, built into<br><span>everyday systems.</span></h2></div><p>A few areas where I’ve helped turn business needs into working solutions.</p></div>
+      <div class="projects">
+        <article class="project featured"><div class="project-top"><span class="mono">01 / APPLICATION MODERNIZATION</span><span class="project-symbol" aria-hidden="true">↗</span></div><h3>An evolving enterprise<br>web experience.</h3><p>Continuously maintain and improve an internal Air Dangerous Goods website supporting reporting, training administration, compliance tracking, and operational workflows.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Translate changing operational requirements into practical application updates.</p><p><strong>My contribution:</strong> Develop Razor Pages and backend logic, update SQL reporting, troubleshoot issues across the stack, and refine layouts for clearer navigation and usability.</p><p><strong>What I enjoy:</strong> Combining technical maintenance with creative redesign to make an established system easier to use.</p></div></details><div class="tags"><span>ASP.NET Core</span><span>C#</span><span>SQL Server</span><span>UI design</span></div></article>
+        <article class="project"><div class="project-top"><span class="mono">02 / IDENTITY & INTEGRATION</span><span class="project-symbol" aria-hidden="true">⌁</span></div><h3>Modernizing the<br>way systems connect.</h3><p>Help transition legacy WS4ID-based user workflows to Microsoft Entra ID and Microsoft Graph API, updating authentication and employee lookup integrations.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Update legacy identity dependencies and user information workflows.</p><p><strong>My contribution:</strong> Integrate Graph API calls, map user attributes, and troubleshoot authentication and lookup behavior across application pages.</p><p><strong>Related security work:</strong> Secure configuration and certificate handling using HashiCorp Vault, encrypted secrets, and certificate-based authentication.</p></div></details><div class="tags"><span>Microsoft Graph</span><span>Entra ID</span><span>OpenID Connect</span><span>Vault</span></div></article>
+        <article class="project"><div class="project-top"><span class="mono">03 / DATA & AUTOMATION</span><span class="project-symbol" aria-hidden="true">⇄</span></div><h3>Less repetition.<br>More reliable workflows.</h3><p>Build SQL-driven reports and scheduled data exports, connecting database records with recurring CSV generation and SFTP delivery.</p><details><summary>Inside the work <span aria-hidden="true">+</span></summary><div class="detail-content"><p><strong>The focus:</strong> Support recurring business reporting and data delivery.</p><p><strong>My contribution:</strong> Develop and maintain stored procedures, reporting logic, and automated export processes, including scheduled execution and file retention.</p><p><strong>The approach:</strong> Validate data, investigate failures, and maintain workflows as requirements change.</p></div></details><div class="tags"><span>SQL</span><span>.NET</span><span>CSV exports</span><span>SFTP</span></div></article>
+      </div><p class="work-note">These summaries describe internal professional work. Source code and internal system details are proprietary.</p>
+    </div></section>    <section class="section wrap skills" aria-labelledby="approach-title">
+      <div><p class="eyebrow">HOW I APPROACH PROBLEMS</p><h2 id="approach-title">Understand.<br>Investigate.<br><span>Improve.</span></h2></div>
+      <div class="skill-groups">
+        <div class="skill-row"><span class="mono">01</span><div><h3>Connect the layers</h3><p>Trace issues across the interface, server-side logic, SQL procedures, authentication, and deployment environment.</p></div></div>
+        <div class="skill-row"><span class="mono">02</span><div><h3>Keep people in view</h3><p>Work with business users and technical teams to understand requirements, validate updates, and improve usability.</p></div></div>
+        <div class="skill-row"><span class="mono">03</span><div><h3>Keep learning</h3><p>Bring curiosity to unfamiliar problems, including the practical use of AI tools and GitHub to support development and learning.</p></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <a class="brand" href="index.html" aria-label="Home">ss<span>.</span></a>
+    <p>© 2026 Simona Sofronova · Louisville, KY</p>
+    <div class="footer-links"><a href="mailto:simonasof01@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/simona-sofronova" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+  </footer>
+</body>
+</html>
